@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bodoni Moda", serif;
+  background-color: #f4f7f9;
+  color: #333;
+}
+
+h1 {
+  font-family: "Bodoni Moda", serif;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.header {
+  background: linear-gradient(90deg, #206fdd, #00d2ff);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #ddd;
+}
+
+#sidenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100%;
+  background-color: #1d3557;
+  padding-top: 50px;
+  box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow-y: auto;
+}
+
+#sidenav h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Sacramento", cursive;
+  margin-bottom: 20px;
+}
+
+#sidenav a {
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-bottom: 1px solid #444;
+  transition: background-color 0.3s ease;
+}
+
+#sidenav a:hover {
+  background-color: #0056b3;
+}
+
+#sidenav a.btn {
+  background-color: #dc3545;
+  border: none;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+#sidenav a.btn:hover {
+  background-color: #c82333;
+}
+
+#main {
+  margin-left: 220px;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #ffffff;
+  transition: margin-left 0.3s ease;
+}
+
+#content {
+  margin-top: 30px;
+}
+
+h2 {
+  font-family: "Merriweather", serif;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.card .card-body {
+  font-size: 1rem;
+  color: #666;
+}
+
+.card .card-footer {
+  background-color: #f4f7f9;
+  text-align: right;
+}
+
+button,
+.btn {
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #0056b3;
+}
+
+input,
+select,
+textarea {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+@media (max-width: 768px) {
+  #sidenav {
+    width: 180px;
+  }
+
+  #main {
+    margin-left: 180px;
+  }
+
+  #sidenav h1 {
+    font-size: 1.5rem;
+  }
+
+  #sidenav a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #sidenav {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+  }
+
+  #main {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  #sidenav a {
+    padding: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .header {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  button,
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+/* For Ultra-Small Screens (e.g., below 400px) */
+@media (max-width: 400px) {
+  #sidenav a {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  button,
+  .btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}

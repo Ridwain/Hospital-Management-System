@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="registrationForm.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <section
+      class="container"
+      style="margin-left: 0; margin-right: 0; width: 750px"
+    >
+      <header>Registration Form</header>
+      <form method="post" action="patientRegister.php" class="form">
+        <div class="input-box">
+          <label>Full Name</label>
+          <input
+            type="text"
+            placeholder="Enter full name"
+            name="fullName"
+            required
+            pattern=".*\S.*"
+            title="This field cannot contain only spaces."
+          />
+        </div>
+        <div class="input-box">
+          <label>Email Address</label>
+          <input
+            type="text"
+            placeholder="Enter email address"
+            name="email"
+            required
+            pattern=".*\S.*"
+            title="This field cannot contain only spaces."
+          />
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input
+              type="tel"
+              placeholder="01XXXXXXXXX"
+              pattern="[0-1]{2}[0-9]{9}"
+              name="phoneNumber"
+              required
+              pattern=".*\S.*"
+              title="This field cannot contain only spaces."
+            />
+          </div>
+          <div class="input-box">
+            <label>Birth Date</label>
+            <input
+              type="date"
+              placeholder="Enter birth date"
+              name="b_date"
+              id="date"
+              pattern=".*\S.*"
+              title="This field cannot contain only spaces."
+              required
+            />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input
+                type="radio"
+                id="check-male"
+                name="gender"
+                value="Male"
+                checked
+              />
+              <label for="check-male">Male</label>
+            </div>
+            <div class="gender">
+              <input
+                type="radio"
+                id="check-female"
+                value="Female"
+                name="gender"
+              />
+              <label for="check-female">Female</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Address</label>
+          <input
+            type="text"
+            placeholder="Enter your address"
+            name="address"
+            pattern=".*\S.*"
+            title="This field cannot contain only spaces."
+            required
+          />
+
+          <div class="column">
+            <div class="select-box">
+              <select name="bloodGrp">
+                <option hidden>Blood Group</option>
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+                <option>O+</option>
+                <option>O-</option>
+              </select>
+            </div>
+
+            <div class="select-box">
+              <select name="userType">
+                <option hidden>User Type</option>
+                <option>Patient</option>
+              </select>
+            </div>
+          </div>
+          <div class="column">
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter your password"
+              pattern=".*\S.*"
+              title="This field cannot contain only spaces."
+              required
+            />
+          </div>
+        </div>
+        <button type="submit" name="submit">Submit</button>
+        <br /><br />
+        <div class="register-link">
+          <p class="text-center">
+            Go Back To <a href="index.html">Home Page</a>
+          </p>
+        </div>
+      </form>
+    </section>
+    <script>
+      const today = new Date().toISOString().split("T")[0];
+      // Set the max attribute to today’s date
+      document.getElementById("date").setAttribute("max", today);
+    </script>
+  </body>
+</html>

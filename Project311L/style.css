@@ -1,0 +1,183 @@
+/* General */
+body {
+  margin: 0;
+  font-family: "Merriweather", serif;
+}
+
+#Title .hospital-name {
+  padding-top: 20px;
+  font-weight: bold;
+  color: rgb(130, 130, 249);
+  font-family: "Merriweather", serif;
+  font-size: 2rem;
+}
+.dropdown-menu {
+  max-width: auto;
+  min-width: 5rem;
+  border-color: black;
+  background-color: aliceblue;
+}
+.navbar {
+  padding-right: 65px;
+  font-family: "Merriweather", serif;
+  font-weight: 800px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 1.5rem;
+}
+
+/* Welcome Section */
+#welcome-txt {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgb(130, 130, 249);
+}
+
+.welcome-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* About Us Section */
+#mid-heading {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.aboutUsimage {
+  max-width: 100%;
+  height: auto;
+}
+
+/* We Care Section */
+#h3-3rd-section {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(130, 130, 249);
+}
+
+#h1-3rd-section {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#description {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+#care-img1 {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer h5 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer ul li {
+  font-size: 1rem;
+}
+
+.footer .social-link img {
+  margin: 0 10px;
+  transition: transform 0.2s ease;
+}
+
+.footer .social-link img:hover {
+  transform: scale(1.1);
+}
+/* Specialty Section */
+#specialties {
+  background-color: #f9f9f9;
+}
+
+.specialty-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.specialty-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.specialty-card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.specialty-card .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #343a40;
+}
+
+.specialty-card .card-text {
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #welcome-txt {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #mid-heading {
+    text-align: center;
+  }
+  .navbar .hospital-name {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .navbar .nav-link {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #welcome-txt {
+    font-size: 1.5rem;
+  }
+  #mid-heading {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .footer h5 {
+    font-size: 1.2rem;
+  }
+  .footer ul li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer h5 {
+    font-size: 1rem;
+  }
+}

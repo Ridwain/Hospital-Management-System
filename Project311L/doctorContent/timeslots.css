@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4e97e4;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-bottom: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Form Container */
+.container {
+  max-width: 600px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+/* Grid Layout for Form */
+form {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Label takes 1 part, inputs take 2 parts */
+  grid-gap: 1rem;
+  align-items: center;
+}
+
+label {
+  font-weight: 600;
+  text-align: right;
+  padding-right: 1rem;
+}
+
+/* Input and Button Styles */
+input[type="number"],
+select {
+  height: calc(2.25rem + 2px);
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  width: 100%;
+}
+
+button[type="submit"] {
+  grid-column: 1 / span 2; /* Make the button span the full width */
+  background-color: #1b7be9;
+  border-color: #3153da;
+  font-size: 1rem;
+  padding: 0.6rem;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #499ffb;
+  border-color: #abcdf1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem 0;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
+
+  form {
+    grid-template-columns: 1fr; /* Stack labels and inputs vertically on small screens */
+  }
+
+  label {
+    text-align: left;
+    padding-right: 0;
+  }
+
+  button[type="submit"] {
+    grid-column: 1;
+  }
+}

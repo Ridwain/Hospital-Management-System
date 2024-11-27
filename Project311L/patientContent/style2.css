@@ -1,0 +1,103 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+/* Container Styling */
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  background: linear-gradient(90deg, #3a7bd5, #00d2ff);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header h2 {
+  color: #4a90e2; /* Bluish Header */
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* Form Inputs */
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 12px;
+  font-size: 16px;
+  box-shadow: none;
+  margin-bottom: 20px;
+}
+
+.form-control:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.4);
+}
+
+/* Label Styling */
+label {
+  font-weight: 700;
+  color: #f6f6f7;
+  margin-bottom: 15px;
+}
+
+/* Submit Button */
+.btn-primary {
+  background-color: #237bdf;
+  border-color: #4a90e2;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 40%;
+  padding: 12px;
+  border-radius: 8px;
+  width: 20%;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #357abd;
+  border-color: #357abd;
+}
+
+/* Radio Button and Label */
+.form-group input[type="radio"] {
+  margin-right: 10px;
+}
+
+.form-group label {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* Select dropdown styling */
+.form-control {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("https://img.icons8.com/ios-filled/50/000000/chevron-down.png")
+    no-repeat right;
+  background-size: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  header h2 {
+    font-size: 24px;
+  }
+
+  .form-control {
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

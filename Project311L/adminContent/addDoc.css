@@ -1,0 +1,123 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #163572;
+  color: #333;
+}
+
+/* Container */
+.container {
+  margin: 0 auto;
+  background: linear-gradient(90deg, #3a7bd5, #00d2ff);
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Header */
+header {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #f7f8fc;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #f9fafb;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 12px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Radio Buttons */
+.form-group input[type="radio"] {
+  margin-right: 8px;
+}
+
+.form-check-label {
+  font-size: 1rem;
+  margin-right: 20px;
+}
+
+h4 {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Button */
+button {
+  padding: 12px;
+  margin-left: 400px;
+  width: 100%;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0542c6;
+}
+
+button:active {
+  background-color: #388e3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 0.9rem;
+  }
+}

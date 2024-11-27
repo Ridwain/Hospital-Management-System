@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>We Care Hospital</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Navigation Section -->
+    <section id="Title">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+            <img
+              src="images/WE CARE.png"
+              width="70"
+              height="60"
+              class="d-inline-block align-top"
+              alt="We Care Logo"
+            />
+          </a>
+          <h1 class="hospital-name">We Care Hospital</h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#middle-part">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#specialties">Specialties</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                  >LOGIN</a
+                >
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="adminLogin.php">Admin Login</a>
+                  <a class="dropdown-item" href="doctorLogin.php"
+                    >Doctor Login</a
+                  >
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="patientLogin.php"
+                    >Patient Login</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Welcome Section -->
+        <div
+          class="row align-items-center"
+          style="background-color: aliceblue; padding-top: 20px"
+        >
+          <div class="col-lg-6 text-center text-lg-left">
+            <h1 id="welcome-txt">
+              WELCOME <br />TO <br />
+              WE CARE HOSPITAL.
+            </h1>
+          </div>
+          <div class="col-lg-6 text-center">
+            <img
+              class="img-fluid welcome-image"
+              src="images/doctors.jpg"
+              alt="Doctors"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="middle-part" class="py-5">
+      <div class="container">
+        <hr />
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-12 text-center">
+            <img
+              class="img-fluid aboutUsimage"
+              src="images/aboutUsPic.jpg"
+              alt="About Us Image"
+            />
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <h2 id="mid-heading" class="text-center text-lg-left">About Us</h2>
+            <p id="aboutUsParagraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              neque eros, volutpat ac lacinia eget, bibendum nec orci. Sed
+              dapibus arcu sit amet molestie lobortis. Donec blandit dictum
+              turpis, sit amet rhoncus mi interdum quis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- We Care Section -->
+    <section class="py-5" style="background-color: #f7f7f7">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 id="h3-3rd-section">We Are The Best</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 id="h1-3rd-section">Because We Care</h1>
+            <p id="description">
+              We Care Hospitals Ltd. is a 350 bedded five-star hospital offering
+              specialized services, supported by critical care units and 24-hour
+              emergency services.
+            </p>
+          </div>
+          <div class="col-lg-6 text-center">
+            <img
+              id="care-img1"
+              class="img-fluid"
+              src="images/med.jpg"
+              alt="Showing care"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="specialties" class="py-5">
+      <div class="container">
+        <h3 class="text-center mb-5">Our Key Specialties</h3>
+        <div
+          id="specialtiesCarousel"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card specialty-card">
+                    <img
+                      src="images/cardiology.jpg"
+                      class="card-img-top"
+                      alt="Cardiology"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Cardiology</h5>
+                      <p class="card-text">
+                        Advanced heart care with state-of-the-art technology.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card specialty-card">
+                    <img
+                      src="images/neurology.jpg"
+                      class="card-img-top"
+                      alt="Neurology"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Neurology</h5>
+                      <p class="card-text">
+                        Expert treatment for brain and nervous system
+                        conditions.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card specialty-card">
+                    <img
+                      src="images/internalMedicine.jpg"
+                      class="card-img-top"
+                      alt="Internal Medicine"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Internal Medicine</h5>
+                      <p class="card-text">
+                        Comprehensive care for adult health and wellness.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card specialty-card">
+                    <img
+                      src="images/fertility.jpg"
+                      class="card-img-top"
+                      alt="Compassionate Service"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Fertility Center</h5>
+                      <p class="card-text">
+                        Offering advanced treatments for infertility with
+                        compassionate care.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card specialty-card">
+                    <img
+                      src="images/orthopaedic.jpg"
+                      class="card-img-top"
+                      alt="Quality Treatment"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Orthopaedic</h5>
+                      <p class="card-text">
+                        Comprehensive care for bone, joint, and muscle
+                        conditions. like this small
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card specialty-card">
+                    <img
+                      src="images/nephrology.jpg"
+                      class="card-img-top"
+                      alt="Stay Connected"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Nephrology</h5>
+                      <p class="card-text">
+                        Expert kidney care and treatment for renal disorders.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <a
+            class="carousel-control-prev"
+            href="#specialtiesCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#specialtiesCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center text-md-left">
+            <a href="#">
+              <img
+                src="images/WE CARE.png"
+                alt="We Care Hospital Logo"
+                width="70"
+                height="60"
+              />
+            </a>
+            <h5 class="mt-2">We Care Hospital</h5>
+          </div>
+
+          <!-- Contact Us Section -->
+          <div class="col-md-4 text-center">
+            <h5>Contact Us</h5>
+            <ul class="list-unstyled">
+              <li>Email: ridwainislam@gmail.com</li>
+              <li>Phone: 01841261325</li>
+              <li>Address: Bashundhara Residential Area , DHAKA</li>
+            </ul>
+          </div>
+
+          <!-- Social Media Links -->
+          <div class="col-md-4 text-center text-md-right">
+            <h5>Follow Us On</h5>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="social-link"
+            >
+              <img
+                src="images/facebook.png"
+                alt="Facebook"
+                width="30"
+                height="30"
+              />
+            </a>
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              class="social-link"
+            >
+              <img
+                src="images/twitterX.png"
+                alt="Twitter"
+                width="30"
+                height="30"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              class="social-link"
+            >
+              <img
+                src="images/instagram.png"
+                alt="Instagram"
+                width="30"
+                height="30"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col text-center">
+            <p class="mb-0">
+              &copy; 2024 We Care Hospital. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            const startPosition = window.pageYOffset;
+            const targetPosition = target.getBoundingClientRect().top;
+            const offset = 70;
+            const distance = targetPosition - offset;
+            const duration = 1000;
+            let startTime = null;
+
+            function easeInOutQuad(t, b, c, d) {
+              t /= d / 2;
+              if (t < 1) return (c / 2) * t * t + b;
+              t--;
+              return (-c / 2) * (t * (t - 2) - 1) + b;
+            }
+
+            // Animation function
+            function animation(currentTime) {
+              if (startTime === null) startTime = currentTime;
+              const timeElapsed = currentTime - startTime;
+              const run = easeInOutQuad(
+                timeElapsed,
+                startPosition,
+                distance,
+                duration
+              );
+              window.scrollTo(0, run);
+              if (timeElapsed < duration) requestAnimationFrame(animation);
+            }
+            requestAnimationFrame(animation);
+          }
+        });
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
