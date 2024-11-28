@@ -37,6 +37,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'dashboard';
 <body>
   <header class="header">
     <h1>Welcome to Doctor's Portal</h1>
+    <a href="dLogout.php" class="btn-logout">Log Out</a>
   </header>
 
   <nav id="sidenav" class="sidenav">
@@ -45,7 +46,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'dashboard';
     <a href="?page=appointments">Appointments</a>
     <a href="?page=manageTimeSlots">Manage Time Slots</a>
     <a href="?page=search">Search 🔍</a>
-    <a href="dLogout.php" class="btn">Log Out</a>
+
   </nav>
 
   <div id="main">
