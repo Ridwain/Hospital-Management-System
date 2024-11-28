@@ -37,7 +37,8 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'dashboard';
 <body>
   <!-- Header Section -->
   <header class="header">
-    <h1>Welcome to Patient's Portal</h1>
+    <h1>We Care Hospital</h1>
+    <a href="pLogout.php" class="btn-logout">Log Out</a>
   </header>
 
   <!-- Sidebar Navigation -->
@@ -46,7 +47,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'dashboard';
     <a href="?page=dashboard">Dashboard</a>
     <a href="?page=makeAppointment">Make Appointment</a>
     <a href="?page=appointments">Appointments List 🔍</a>
-    <a href="pLogout.php" class="btn">Log Out</a>
+
   </nav>
 
   <!-- Main Content Area -->
