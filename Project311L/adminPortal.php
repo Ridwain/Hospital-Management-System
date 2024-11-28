@@ -2,7 +2,6 @@
 include 'dbcon.php';
 session_start();
 
-
 if (!isset($_SESSION['user_id'])) {
   header("Location: doctorLogin.php");
   exit();
@@ -18,40 +17,37 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'dashboard';
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin's Portal</title>
-  <link rel="stylesheet" href="portal.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <!-- Bootstrap 4 and Custom Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Sacramento&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700&display=swap" rel="stylesheet">
 
-  <script type="text/javascript">
-    function preventBack() {
-      window.history.forward();
-    }
-    setTimeout(preventBack, 0);
-    window.onunload = function() {};
-  </script>
+
+
+
 </head>
 
 <body>
   <!-- Header Section -->
   <header class="header">
     <h1>Welcome to Admin Portal</h1>
+    <a href="adminLogout.php" class="btn-logout">Log Out</a>
   </header>
 
   <!-- Sidebar Navigation -->
-  <nav id="sidenav" class="sidenav">
+  <nav id="sidenav">
     <h1 id="brandName">WCH</h1>
-    <a href="?page=dashboard">Dashboard</a>
-    <a href="?page=addDoctor">Add Doctors</a>
-    <a href="?page=addSpecialization">Add Specialization</a>
-    <a href="adminLogout.php" class="btn">Log Out</a>
+    <a href="?page=dashboard" class="btn btn-link">Dashboard</a>
+    <a href="?page=addDoctor" class="btn btn-link">Add Doctors</a>
+    <a href="?page=addSpecialization" class="btn btn-link">Add Specialization</a>
   </nav>
 
   <!-- Main Content Area -->
   <div id="main">
     <div id="content">
+      <!-- Page-specific Content -->
+
       <?php
       // Load content based on the selected page
       switch ($page) {
@@ -81,15 +77,15 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'dashboard';
           Swal.fire({
             title: "<?php echo $_SESSION['status']; ?>",
             icon: "<?php echo $_SESSION['status_code']; ?>",
-            button: "OK",
-
+            confirmButtonText: "OK",
           });
         </script>
-
       <?php
         unset($_SESSION['status']);
       }
       ?>
+    </div>
+  </div>
 </body>
 
 </html>
