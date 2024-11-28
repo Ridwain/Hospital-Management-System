@@ -1,250 +1,179 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: "Bodoni Moda", serif;
-  background-color: #f4f7f9;
-  color: #333;
+  font-family: "Merriweather", serif;
+  margin: 0;
 }
 
-h1 {
-  font-family: "Bodoni Moda", serif;
-  font-size: 2.5rem;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-
+/* Header Styles */
 .header {
-  background: linear-gradient(90deg, #206fdd, #00d2ff);
+  background-color: #007bff;
   color: white;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-bottom: 2px solid #ddd;
-}
-
-#sidenav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 220px;
-  height: 100%;
-  background-color: #1d3557;
-  padding-top: 50px;
-  box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  overflow-y: auto;
-}
-
-#sidenav h1 {
-  color: #fff;
-  text-align: center;
+  padding: 15px 30px;
+  padding-left: 300px;
   font-size: 2rem;
-  font-family: "Sacramento", cursive;
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#sidenav a {
-  display: block;
-  padding: 15px 20px;
-  color: #fff;
-  font-size: 1.1rem;
-  text-decoration: none;
-  border-bottom: 1px solid #444;
-  transition: background-color 0.3s ease;
-}
-
-#sidenav a:hover {
-  background-color: #0056b3;
-}
-
-#sidenav a.btn {
-  background-color: #dc3545;
-  border: none;
+.header h1 {
   text-align: center;
-  margin-top: 20px;
-  font-weight: bold;
-  color: white;
-  transition: background-color 0.3s ease;
+  width: 100%;
+  font-size: 1.8rem;
 }
 
-#sidenav a.btn:hover {
+.header .btn-logout {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  width: 110px;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.header .btn-logout:hover {
   background-color: #c82333;
 }
 
+/* Sidebar Styles */
+#sidenav {
+  background-color: #343a40;
+  color: white;
+  height: 100vh;
+  /* Full height initially */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  padding-top: 40px;
+
+  transition: all 0.3s;
+  display: block;
+}
+
+#sidenav h1 {
+  color: #ff6600;
+  text-align: center;
+  font-family: "Sacramento", cursive;
+  margin-bottom: 40px;
+}
+
+#sidenav a {
+  color: white;
+  padding: 12px 15px;
+  display: block;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+#sidenav a:hover {
+  background-color: #495057;
+  border-radius: 5px;
+}
+
+/* Main content area */
 #main {
-  margin-left: 220px;
+  margin-left: 250px;
   padding: 20px;
-  min-height: 100vh;
-  background-color: #ffffff;
   transition: margin-left 0.3s ease;
 }
 
-#content {
-  margin-top: 30px;
-}
-
-h2 {
-  font-family: "Merriweather", serif;
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.card {
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.card h3 {
-  font-family: "Merriweather", serif;
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.card .card-body {
-  font-size: 1rem;
-  color: #666;
-}
-
-.card .card-footer {
-  background-color: #f4f7f9;
-  text-align: right;
-}
-
-button,
-.btn {
-  border-radius: 25px;
-  padding: 10px 20px;
-  font-size: 1rem;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover,
-.btn:hover {
-  background-color: #0056b3;
-}
-
-input,
-select,
-textarea {
-  border-radius: 5px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  width: 100%;
-  margin-top: 10px;
-  font-size: 1rem;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-  outline: none;
-  border-color: #007bff;
-}
-
-@media (max-width: 768px) {
-  #sidenav {
-    width: 180px;
+/* Mobile Adjustments */
+@media (max-width: 991px) {
+  .header {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px 15px;
   }
 
-  #main {
-    margin-left: 180px;
-  }
-
-  #sidenav h1 {
-    font-size: 1.5rem;
-  }
-
-  #sidenav a {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 576px) {
   #sidenav {
     position: relative;
+    margin-top: 0px;
     width: 100%;
+    left: 0;
     height: auto;
-    padding-top: 10px;
+    /* Height set to auto on small screens */
   }
 
   #main {
     margin-left: 0;
-    padding: 10px;
   }
 
-  #sidenav a {
-    padding: 10px;
-    font-size: 0.9rem;
-    text-align: center;
-  }
-
-  .header {
-    font-size: 1.2rem;
-    padding: 15px;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  h2 {
+  .header h1 {
     font-size: 1.5rem;
   }
 
-  .card {
-    padding: 15px;
-  }
-
-  .card h3 {
-    font-size: 1.2rem;
-  }
-
-  button,
-  .btn {
-    font-size: 0.9rem;
+  .header .btn-logout {
+    font-size: 1rem;
     padding: 8px 16px;
+  }
+
+  #sidenav a {
+    font-size: 1rem;
+    padding: 10px;
   }
 }
 
-/* For Ultra-Small Screens (e.g., below 400px) */
-@media (max-width: 400px) {
-  #sidenav a {
-    padding: 8px;
-    font-size: 0.8rem;
+/* Small devices (Mobile) */
+@media (max-width: 767px) {
+  .header {
+    padding-left: 200px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0;
   }
 
-  h1 {
+  .header h1 {
     font-size: 1.5rem;
+    text-align: left;
   }
 
-  h2 {
-    font-size: 1.2rem;
+  .header .btn-logout {
+    margin-top: 10px;
+    margin-left: 100px;
   }
 
-  .card {
-    padding: 10px;
+  #sidenav {
+    width: 100%;
+    position: relative;
+    margin-top: 0px;
+    left: 0;
+    height: auto;
+    /* Ensure auto height on smaller screens */
   }
 
-  .card h3 {
-    font-size: 1rem;
+  #main {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 611px) {
+  .header {
+    padding-left: 110px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0;
   }
 
-  button,
-  .btn {
-    font-size: 0.8rem;
-    padding: 6px 12px;
+  .header h1 {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .header .btn-logout {
+    margin-top: 10px;
+    margin-left: 100px;
+  }
+
+  #sidenav {
+    width: 100%;
+    position: relative;
+    margin-top: 0px;
+    left: 0;
+    height: auto;
+    /* Ensure auto height on smaller screens */
+  }
+
+  #main {
+    margin-left: 0;
   }
 }
